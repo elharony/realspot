@@ -100,6 +100,10 @@ section
     .panel
         border: 0
         margin-bottom: 20px !important
+        position: relative
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1)
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) 
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1)
         .panel-heading
             padding: 0
             .panel-title
@@ -130,7 +134,8 @@ section
                         color: $color-white-b2
         .panel-collapse
             .panel-body
-                font-size: 14px
+                font-size: 1.1em
+                padding: 0 1em 1em
                 color: #555
                 
     // FAQ Altenative
@@ -146,11 +151,7 @@ section
                 margin: 15px auto
                 padding: 10px
                 text-align: center
-                -webkit-transition: all 300ms ease-in-out
-                -moz-transition: all 300ms ease-in-out
-                -o-transition: all 300ms ease-in-out
-                -sm-transition: all 300ms ease-in-out
-                transition: all 300ms ease-in-out
+                transition: all 300ms ease
                 i
                     float: $english-version
                     margin: 0.25em
