@@ -63,7 +63,13 @@ section
     background: #F4F4F4
     .feat
         text-align: center
-        margin-bottom: 25px
+        padding: 0
+    .inner
+        background-color: $color-white
+        box-shadow: 0 0 35px rgba(0, 0, 0, 0.08)
+        transition: all .3s linear
+        padding: 1em
+        margin: 1em
         &:hover
             i
                 background: #FEEDEF
@@ -72,11 +78,6 @@ section
                 color: #FFF
             p
                 color: #DDD
-    .inner
-        background-color: $color-white
-        box-shadow: 0 0 35px rgba(0, 0, 0, 0.08)
-        transition: all .3s linear
-        padding: 15px
     i
         color: $color-white
         font-size: 2em

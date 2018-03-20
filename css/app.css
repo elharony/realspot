@@ -34,6 +34,7 @@ section {
 /* Hero */
 .hero {
   position: relative;
+  height: 95vh;
   background: url(../img/background-placeholder.jpg);
   background-attachment: fixed; }
   .hero .intro, .hero .download {
@@ -53,22 +54,23 @@ section {
   background: #F4F4F4; }
   .features .feat {
     text-align: center;
-    margin-bottom: 25px; }
-    .features .feat:hover i {
-      background: #FEEDEF;
-      color: #333; }
-    .features .feat:hover h3 {
-      color: #FFF; }
-    .features .feat:hover p {
-      color: #DDD; }
+    padding: 0; }
   .features .inner {
     background-color: #fff;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
     transition: all 0.3s linear;
-    padding: 15px; }
+    padding: 1em;
+    margin: 1em; }
+    .features .inner:hover i {
+      background: #FEEDEF;
+      color: #333; }
+    .features .inner:hover h3 {
+      color: #FFF; }
+    .features .inner:hover p {
+      color: #DDD; }
   .features i {
     color: #fff;
-    font-size: 3em;
+    font-size: 2em;
     width: 76px;
     height: 76px;
     border-radius: 100%;
@@ -79,14 +81,19 @@ section {
     margin-bottom: 10px;
     transition: all 0.4s linear; }
   .features h3 {
-    margin-bottom: 20px; }
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
   .features .inner:hover {
     background: #FF6B6B; }
 
 /* faq */
 .faq .panel {
   border: 0;
-  margin-bottom: 20px !important; }
+  margin-bottom: 20px !important;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); }
   .faq .panel .panel-heading {
     padding: 0; }
     .faq .panel .panel-heading .panel-title {
@@ -116,7 +123,8 @@ section {
           float: right;
           color: #888888; }
   .faq .panel .panel-collapse .panel-body {
-    font-size: 14px;
+    font-size: 1.1em;
+    padding: 0 1em 1em;
     color: #555; }
 .faq .faq-alternative {
   padding: 50px;
@@ -130,11 +138,7 @@ section {
       margin: 15px auto;
       padding: 10px;
       text-align: center;
-      -webkit-transition: all 300ms ease-in-out;
-      -moz-transition: all 300ms ease-in-out;
-      -o-transition: all 300ms ease-in-out;
-      -sm-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out; }
+      transition: all 300ms ease; }
       .faq .faq-alternative ul li a i {
         float: left;
         margin: 0.25em;
