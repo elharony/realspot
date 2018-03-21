@@ -54,7 +54,7 @@ section {
     color: #fff;
     box-shadow: 0 18px 32px #cfcfcf; }
     .navbar .navbar-nav .nav-item .featured:hover {
-      box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.28);
+      box-shadow: 0px 3px 7px #cfcfcf;
       color: #fff; }
 
 /* hero */
