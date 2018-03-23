@@ -168,8 +168,11 @@ section
             background: #fcfcfc
             transition: all 300ms ease
             &:hover
-                @extend .most-popular-plan
-                .plan-name, .plan-subscribe
+                transform: translateY(-30px)
+                -webkit-box-shadow: 0px 10px 15px -4px rgba(158,158,158,1)
+                -moz-box-shadow: 0px 10px 15px -4px rgba(158,158,158,1)
+                box-shadow: 0px 10px 15px -4px rgba(158,158,158,1)
+                .plan-name
                     color: $color-white
                     background: $color-main
                 .plan-subscribe
@@ -182,6 +185,8 @@ section
                 background: $color-white
                 color: $color-main
                 padding: 0.5em
+                text-transform: uppercase
+                font-weight: bold
                 transition: all 300ms ease
             .plan-price
                 font-size: 4em
@@ -197,6 +202,8 @@ section
                 color: $color-white-b2
                 .most-popular
                     color: $color-main
+                    font-weight: bold
+                    text-transform: uppercase
             .plan-features
                 text-align: left
                 li
@@ -206,11 +213,15 @@ section
                 display: inline-block
                 width: 50%
                 height: 40px
-                line-height: 35px
+                line-height: 40px
+                border-radius: 40px
                 border: 1px solid $color-main
                 color: $color-black
                 opacity: 0
                 transition: all 300ms ease
+                &:hover
+                    color: $color-white
+                    background: $color-main
         .most-popular-plan
             transform: translateY(-30px)
             -webkit-box-shadow: 0px 10px 15px -4px rgba(158,158,158,1)
@@ -221,9 +232,18 @@ section
                 background: $color-main
             .plan-subscribe
                 opacity: 1
+        
     .plans-cta
         margin-top: 1em
+        padding: 2.5em
+        background: #F4F4F4
+        text-transform: uppercase
+        font-weight: bold
         width: 100%
+        a
+            color: $color-main
+            &:hover
+                text-decoration: underline
 
 /* faq */
 .faq

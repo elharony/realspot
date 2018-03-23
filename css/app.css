@@ -143,11 +143,16 @@ section {
     padding: 0.75em;
     background: #fcfcfc;
     transition: all 300ms ease; }
-    .plans .plan .plan-inner:hover .plan-name, .plans .plan .plan-inner:hover .plan-subscribe {
-      color: #fff;
-      background: #C66727; }
-    .plans .plan .plan-inner:hover .plan-subscribe {
-      opacity: 1; }
+    .plans .plan .plan-inner:hover {
+      transform: translateY(-30px);
+      -webkit-box-shadow: 0px 10px 15px -4px #9e9e9e;
+      -moz-box-shadow: 0px 10px 15px -4px #9e9e9e;
+      box-shadow: 0px 10px 15px -4px #9e9e9e; }
+      .plans .plan .plan-inner:hover .plan-name {
+        color: #fff;
+        background: #C66727; }
+      .plans .plan .plan-inner:hover .plan-subscribe {
+        opacity: 1; }
     .plans .plan .plan-inner .plan-name {
       position: absolute;
       left: 0;
@@ -156,6 +161,8 @@ section {
       background: #fff;
       color: #C66727;
       padding: 0.5em;
+      text-transform: uppercase;
+      font-weight: bold;
       transition: all 300ms ease; }
     .plans .plan .plan-inner .plan-price {
       font-size: 4em; }
@@ -170,7 +177,9 @@ section {
     .plans .plan .plan-inner .plan-info {
       color: #888888; }
       .plans .plan .plan-inner .plan-info .most-popular {
-        color: #C66727; }
+        color: #C66727;
+        font-weight: bold;
+        text-transform: uppercase; }
     .plans .plan .plan-inner .plan-features {
       text-align: left; }
       .plans .plan .plan-inner .plan-features li {
@@ -180,24 +189,36 @@ section {
       display: inline-block;
       width: 50%;
       height: 40px;
-      line-height: 35px;
+      line-height: 40px;
+      border-radius: 40px;
       border: 1px solid #C66727;
       color: #000;
       opacity: 0;
       transition: all 300ms ease; }
-  .plans .plan .most-popular-plan, .plans .plan .plan-inner:hover {
+      .plans .plan .plan-inner .plan-subscribe:hover {
+        color: #fff;
+        background: #C66727; }
+  .plans .plan .most-popular-plan {
     transform: translateY(-30px);
     -webkit-box-shadow: 0px 10px 15px -4px #9e9e9e;
     -moz-box-shadow: 0px 10px 15px -4px #9e9e9e;
     box-shadow: 0px 10px 15px -4px #9e9e9e; }
-    .plans .plan .most-popular-plan .plan-name, .plans .plan .plan-inner:hover .plan-name, .plans .plan .most-popular-plan .plan-subscribe, .plans .plan .plan-inner:hover .plan-subscribe {
+    .plans .plan .most-popular-plan .plan-name, .plans .plan .most-popular-plan .plan-subscribe {
       color: #fff;
       background: #C66727; }
-    .plans .plan .most-popular-plan .plan-subscribe, .plans .plan .plan-inner:hover .plan-subscribe {
+    .plans .plan .most-popular-plan .plan-subscribe {
       opacity: 1; }
 .plans .plans-cta {
   margin-top: 1em;
+  padding: 2.5em;
+  background: #F4F4F4;
+  text-transform: uppercase;
+  font-weight: bold;
   width: 100%; }
+  .plans .plans-cta a {
+    color: #C66727; }
+    .plans .plans-cta a:hover {
+      text-decoration: underline; }
 
 /* faq */
 .faq .panel {
